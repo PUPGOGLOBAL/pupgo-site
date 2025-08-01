@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PupGo | Global Pet Travel</title>
+  <title>Home | PupGo</title>
   <style>
     body {
       margin: 0;
@@ -30,20 +29,42 @@
     }
     .hero {
       text-align: center;
-      padding: 2rem 1rem;
+      margin: 2rem 0;
     }
     .hero img {
       max-width: 100%;
+      height: auto;
       border-radius: 8px;
     }
-    .hero h2 {
-      font-size: 2rem;
-      margin: 1rem 0 0.5rem;
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    .hero p {
-      font-size: 1.1rem;
-      margin: 0 auto;
-      max-width: 700px;
+    form {
+      margin-top: 2rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #1f2d37;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
     footer {
       background-color: #1f2d37;
@@ -65,16 +86,36 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <div class="hero">
-    <img src="hero.jpg" alt="Dog traveling with suitcase" />
-    <h2>Global Pet Travel, Seamlessly Handled</h2>
-    <p>
-      Concierge support for every step of your pet’s journey — from documentation to safe arrival.
-    </p>
+    <img src="hero.jpg" alt="PupGo Banner" />
+  </div>
+
+  <div class="container">
+    <h2>Concierge Pet Travel, Done Right</h2>
+    <p>At PupGo, we make traveling with your pets simple, safe, and stress-free. Whether you're moving abroad, taking a holiday, or relocating, we handle every detail—vet coordination, documentation, logistics, and transportation—so you can focus on the journey.</p>
+    <p>Our services are tailored for both domestic and international pet travel, ensuring peace of mind every step of the way.</p>
+
+    <h3>Request a Quote</h3>
+    <form action="mailto:chiefk9@pup-go.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us about your pet and travel plans:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
   </div>
 
   <footer>
