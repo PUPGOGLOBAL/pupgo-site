@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | PupGo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fdfaf6;
+      color: #2a2a2a;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f2d37;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .container {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .contact-info {
+      margin: 1rem 0;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #1f2d37;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1f2d37;
+      color: #ffffff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 4rem;
+    }
+    footer a {
+      color: #ffffff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PupGo</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> <a href="tel:+14043338292">404-333-8292</a></p>
+      <p><strong>Email:</strong> <a href="mailto:chiefk9@pup-go.com">chiefk9@pup-go.com</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pupgo_global/" target="_blank">@pupgo_global</a></p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/705494715989142" target="_blank">facebook.com/pupgo</a></p>
+    </div>
+    <form action="mailto:chiefk9@pup-go.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 PupGo. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/pupgo_global/" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/705494715989142" target="_blank">Facebook</a>
+    </p>
+  </footer>
+</body>
+</html>
