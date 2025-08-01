@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,17 +27,28 @@
       text-decoration: none;
       font-size: 1rem;
     }
+    .hero {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
     .container {
-      max-width: 960px;
+      max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    .about-image {
-      width: 100%;
-      max-width: 700px;
-      border-radius: 10px;
-      display: block;
-      margin: 2rem auto;
+    .bio-img {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .bio-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
     footer {
       background-color: #1f2d37;
@@ -60,17 +70,23 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
+  <div class="hero">
+    <img src="hero.jpg" alt="PupGo Banner" />
+  </div>
+
   <div class="container">
     <h2>About Us</h2>
-    <p>PupGo was born from a personal journey across continents, inspired by one unshakable bond — the one between a man and his dog.</p>
-    <p>Our founder, Oguzhan Ozdemir, grew up in Istanbul, Türkiye, always dreaming of having a dog. That dream came true in 2020 when he adopted Dagsby — a stubborn, soulful Boxer who quickly became his best friend and family. The early days were tough, but the love grew stronger with each challenge.</p>
-    <p>When it came time to travel, Oguzhan realized just how confusing international pet relocation could be — especially for larger dogs. What began as a personal mission to reunite with loved ones without leaving Dagsby behind eventually became a calling.</p>
-    <p>Today, PupGo helps pet owners navigate every step of the pet travel process — from paperwork to passports, crates to customs. Whether it's a move across the country or across the world, we’re here to ensure your pet gets there safely, comfortably, and by your side.</p>
-    <img src="dagsby.jpg" alt="Oguzhan and Dagsby" class="about-image" />
+    <p>My name is Oguzhan Ozdemir, and I founded PupGo after falling in love with my dog Dagsby—my first pet and my best friend. Born in Istanbul, I never had a dog growing up, but adopting Dagsby in 2020 changed everything. He brought joy, loyalty, and love into my life—and made me realize how difficult it can be to travel with a pet, especially internationally.</p>
+    <p>From navigating complicated airline and country regulations to working with veterinarians and preparing travel documentation, I learned everything the hard way. Eventually, I started helping friends with their pets too. Now, with PupGo, I want to help others—so no one has to leave their furry family behind.</p>
+    <p>Whether it's domestic or international, we specialize in providing full-service pet travel support. From documentation to transport logistics, PupGo is here to help you and your best friend go wherever life takes you—together.</p>
+    <div class="bio-img">
+      <img src="dagsby.jpg" alt="Oguzhan and Dagsby" />
+    </div>
   </div>
 
   <footer>
